@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitalex</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+
+    .mainbox {
+      background-image: url("https://technext.github.io/digitalex/images/hearder.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 60px;
+    }
+
+    .smallbox {
+      background-color: #fff;
+      border-radius: 25px;
+      padding: 50px;
+    }
+
+    
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #ffc107;
+      display: flex;
+      align-items: center;
+    }
+
+   
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .nav ul li {
+      cursor: pointer;
+      color: #000;
+    }
+
+    .nav ul li:hover {
+      color: #ffc107;
+    }
+
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      padding: 0 30px;
+    }
+
+    .content {
+      max-width: 50%;
+      text-align: left;
+      margin-top: 80px;
+    }
+
+    .content h2 {
+      font-size: 35px;
+      color: #ffc107;
+      margin: 0;
+    }
+
+    .content h1 {
+      font-size: 60px;
+      letter-spacing: 5px;
+      margin: 10px 0;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .content button , .subsection2 button {
+      background-color: #17094c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 25px;
+      cursor: pointer;
+      font-size: 19px;
+      
+    }
+ 
+    .content button:hover , .subsection2 button:hover , .section4 button:hover , .section5 button:hover{
+      background-color: #ffc107;
+    }
+
+    .container img {
+      width: 400px;
+      height: 250px;
+      margin-top: 80px;
+    }
+    .section2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      background-color: #fff;
+      height: 80vh;
+    }
+    .subsection2 {
+      max-width: 40%;
+      text-align: left;
+    }
+    .subsection2 h2 {
+      font-size: 20px;
+      color: #ffc107;
+      margin: 0;
+    }
+    .subsection2 h1 {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+    .subsection2 p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #444;
+      margin-bottom: 25px;
+    }
+    .section3{
+        background-image: url("https://technext.github.io/digitalex/images/service.jpg");
+        height: 60vh;
+        color: #fff;
+        padding: 80px;
+    }
+    .service{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1px;
+        margin-top: 30px;
+    }
+    .section3 h2{
+        font-size: 20px;
+        color: #ffc107;
+        margin: 0;
+        padding-top: 20px;
+    }
+    .service h1{ 
+        font-size: 25px;
+        margin: 10px 0;
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+    .subservice {
+        margin-right: 100px;
+    }
+    .service:hover .subservice h1 {
+        color: #ffc107;
+    }
+    .service:hover .subservice button {
+        border: 1px solid #ffc107;
+        color: #ffc107;
+    }
+    .subservice button {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    .section4 , .section5 {
+        text-align: center;
+        padding: 50px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section4 h2 , .section5 h2 {
+        font-size: 20px;
+        color: #ffc107;
+        margin: 0;
+        padding-top: 17px;
+        font-weight: normal;
+    }
+    .section4 h1  , .section5 h1 {
+        font-size: 30px;
+        margin: 10px 0;
+        padding-top: 10px;
+        padding-right: 0px;
+        font-weight: normal;
+    }
+    .section4 img ,.section5 img {
+        width: 620px;
+        height: 480px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .section4 button , .section5 button {
+        background-color: #17094c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 25px;
+        cursor: pointer;
+        font-size: 17px;
+        margin-top: 20px;
+        
+    }
+    .section6 {
+        background-image: url("https://technext.github.io/digitalex/images/sub_bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        text-align: center;
+        color: #fff;
+        
+    }
+    .section6 h1 {
+        font-size: 35px;
+        padding-top: 80px;
+        margin: 0;
+    }
+    .section6 p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+        margin: 20px 0;
+    }
+    .section6 input {
+        padding: 12px 25px;
+        border-radius: 25px;
+        border: none;
+        width: 500px;
+        font-size: 16px;
+        position: relative;
+    }
+    .section6 button {
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 25px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-left: 720px;
+        
+    }
+    .btn{
+        position: absolute;
+        left: 80px;
+        
+        color: #ffc107;
+        border: none;
+        border-radius: 30px;
+        padding: 12px 25px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top:2px ;
+        
+       
+        
+    }
+    .section7  {
+        background-color: #fff;
+        text-align: center;
+        padding: 50px;
+        height: 80vh;
+    }
+    .section7 h2 {
+        font-size: 20px;
+        color: #ffc107;
+        margin: 0;
+        padding-top: 17px;
+        font-weight: normal;
+    }
+    .section7 h1 {
+        font-size: 30px;
+        margin: 10px 0;
+        padding-top: 10px;
+        padding-right: 0px;
+        font-weight: normal;
+    }
+    .section7 img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    .section7 h3 {
+        font-size: 25px;
+        margin: 10px 0;
+        padding-top: 10px;
+        padding-right: 0px;
+        font-weight: normal;
+    }
+    .section7 p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+    .section7 hr {
+        width: 200px;
+        border: 1px solid #ffc107;
+        margin: 10px auto;
+    }
+    .section8 {
+      background-color: #fff;
+      text-align: center;
+      padding: 5px;
+    }
+    .section8 h2 {
+      font-size: 20px;
+      color: #ffc107;
+      margin: 0;
+      padding-top: 17px;
+      font-weight: normal;
+    }
+    .section8 h1 {
+      font-size: 40px;
+      margin: 10px 0;
+      padding-top: 10px;
+      padding-right: 0px;
+      font-weight: normal;
+    }
+    .section8 form {
+      margin-top: 30px;
+    }
+    .section8 input {
+      padding: 12px 25px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      color: rgb(206, 206, 206);
+      width: 900px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    .dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      background-color: #17094c;
+      border-radius: 50%;
+      cursor: pointer;
+      padding: 2px;
+    }
+    .doter{
+      width: 20px;
+      height: 20px;
+      background-color: #ffc107;
+      border-radius: 50%;
+      cursor: pointer;
+      padding: 2px;
+    }
+    .message{
+      height: 100px;
+    }
+    .section8 button {
+      background-color: #ffc107;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      cursor: pointer;
+      font-size: 19px;
+      margin-top: 10px;
+      width: 150px;
+    }
+    .footer {
+      background-color: #17094c;
+      height: 70vh;
+      margin-top: 20px;
+      display: flex;
+      color: #fff;
+    }
+    .footer div {
+      flex: 1;
+      padding: 40px;
+    }
+    .imh {
+      padding: 0;
+      margin: 0;
+      height: 10px;
+    }
+    .imh img {
+      height: 150px;
+      margin-top: 40px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="mainbox">
+    <div class="smallbox">
+      
+      <div class="nav">
+        <div class="logo">
+          DIGITALEX
+        </div>
+        <ul>
+          <li style="color:#ffc107;">HOME</li>
+          <li>ABOUT</li>
+          <li>SERVICES</li>
+          <li>NEWS</li>
+          <li>CONTACT US</li>
+          <li>LOGIN</li>
+        </ul>
+      </div>
+
+      
+      <div class="container">
+        <div class="content">
+          <h2>Progress & Success</h2>
+          <h1>C U R R E N C Y</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable. It is a long established fact that a reader will be distracted by the readable.</p>
+          <button>DISCOVER NOW</button>
+        </div>
+        <img src="https://technext.github.io/digitalex/images/ban_img.png" alt="banner">
+      </div>
+    </div>
+  </div>
+  <div class="section2">
+    <img src="https://technext.github.io/digitalex/images/about.png" alt="">
+    <div class="subsection2">
+        <h2>ABOUT US</h2>
+        <h1>WELCOME TO OUR DEGITALEX</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio est corporis sunt enim in quos doloribus esse accusamus praesentium ducimus maiores sapiente debitis saepe, aut nam culpa odit porro consectetur!</p>
+        <button>READ MORE</button>
+    </div>
+    </div>
+    <div class="section3">
+        <div class="subsection3">
+            <h2>SERVICES</h2>
+            <h1>CONSECTETUR ADIPISCING ELIT</h1>
+            <div class="service">
+            <div class="subservice" >
+                <img src="https://technext.github.io/digitalex/images/services_icon1h.png" alt="">
+                <h1>Safe & Secure</h1>
+                <p>ncididunt ut labore et dolore <br> magna aliqua. Ut enim</p>
+                <button>READ MORE</button>
+            </div>
+              <div class="subservice">
+                <img src="https://technext.github.io/digitalex/images/services_icon2h.png" alt="">
+                <h1>Mobile Apps</h1>
+                <p>ncididunt ut labore et dolore <br> magna aliqua. Ut enim</p>
+                <button>READ MORE</button>
+            </div>
+              <div class="subservice">
+                <img src="https://technext.github.io/digitalex/images/services_icon3h.png" alt="">
+                <h1>Wallet</h1>
+                <p>ncididunt ut labore et dolore <br> magna aliqua. Ut enim</p>
+                <button>READ MORE</button>
+            </div>
+              <div class="subservice">
+                <img src="https://technext.github.io/digitalex/images/services_icon4h.png" alt="">
+                <h1>Experts Support</h1>
+                <p>ncididunt ut labore et dolore <br> magna aliqua. Ut enim</p>
+                <button>READ MORE</button> 
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <div class="section4">
+        <h2>BUY AND SELL BITCOINS</h2>
+        <h1>WHY ARE SO MANY PEOPLE <br> INVESTING IN DIGITAL</h1>
+        <img src="https://technext.github.io/digitalex/images/bitcoins.jpg" alt="">
+        <button>START NOW</button>
+    </div>
+     <div class="section5">
+        <h2>WALLET</h2>
+        <h1>A MOST  POWERFUL WALLET USE THIS WALLET FOR <BR>  NEXT SECURE TRANSACTION.</BR></h1>
+        <img src="https://technext.github.io/digitalex/images/wallet.jpg" alt="">
+        <button>MAKE WALLET</button>
+    </div>
+    <div class="section6">
+        <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when <br> looking at its layout. The point of using Lorem ipsum is that it has more-or-less normal <br> distribution of letters, </p>
+    
+    <input type="email"   placeholder="Enter Your Email" />
+    <button class="btn">SUBSCRIBE</button>
+
+    </div>
+    <div class="section7">
+      <h2>TESTIMONIAL</h2>
+      <h1>WHAT IT SAYS OUR CLIENTS </h1>
+      <img src="https://technext.github.io/digitalex/images/test.png" alt="">
+      <h3>DISTRACTED BY</h3> <hr>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The <br> point of using Lorem Ipsum is that is that it has a  more-or-less normal distribution of letters,</p>
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="doter"></div>
+      </div>
+
+
+    </div>
+    <div class="section8">
+      <h2>CONTACT US</h2>
+      <h1>REQESUTE A CALL BACK</h1>
+      <form action="">
+        <input type="text" name="" id="" placeholder="Name"> <br>
+        <input type="number" name="" id="" placeholder="Phone Number"> <br>
+        <input type="email" name="" id="" placeholder="Email Address"> <br>
+        <input type="text" name="" id="" placeholder="Message" class="message"> <br>
+        <button>SEND</button>
+        
+      </form>
+
+    </div>
+    <div>
+      <img src="https://technext.github.io/digitalex/images/map-(1).png" alt="">
+    </div>
+    <div class="footer">
+      <div>
+        <h1>DIGITALEX</h1>
+        <p>reader will be distracted by the <br> readable content of a page when <br> looking at its layout. The point of <br> using Lorem Ipsum is that it has a <br> more-or-less normal di</p>
+      </div>
+      <div>
+        <h1>QUICK LINK</h1>
+        <p> > HOME</p>
+        <p> > Hbout</p>
+        <p> > Currency</p>
+        <p> > Exchange</p>
+        <p> > Subscribe</p>
+      </div>
+      <div>
+        <h1>INSTAGRAM</h1>
+        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do</p>
+        <img src="Screenshot 2025-09-19 112610.png" alt="">
+      </div>
+      <div class="imh">
+        <img src="Screenshot 2025-09-19 112205.png" alt="">
+      </div>
+      <div>
+        <h1>CONTACT INFO</h1>
+        <p>Reader will be dis <br> tracted by the reada</p>
+        <p>demo@gmail.com</p>
+        <p>+01 102586954775</p>
+      </div>
+    </div>
+
+  
+</body>
+</html>
