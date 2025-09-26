@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+  font-family: "Plain";
+  src: url("/assets/fonts/Plain.woff2") format("woff2"),
+       url("/assets/fonts/Plain.woff") format("woff"),
+       url("/assets/fonts/Plain.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+        *{
+            box-sizing: border-box;
+            font-family:  "Plain", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+        }
+
+
+
+        .section1{
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            justify-content:;
+            align-items: center;
+            padding-left: 150px;
+            padding-top: 0px;
+            margin-top: 0;
+
+        }
+        .section1 img{
+            width: 400px;
+            height: 600px;
+            
+        }
+        .section1 h1 {
+            border: 9px solid black;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            font-size: 40px;
+            text-align: center;
+        }
+        .section1 a{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            border: 2px solid #ffd500;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: #ffd500;
+            font-weight: bold;
+        }
+        .section1 a:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+            border: 2px solid black;
+        }
+        .nav{
+            width: 100%;
+            height: 80px;
+            background-color: #212529;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: #ffffff9d;
+            text-decoration: none;
+
+        }
+         .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .nav ul li{
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav button{
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: #ffd500;
+            border: 2px solid #ffd500;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .nav button:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+            border: 2px solid black;
+        }
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            margin-right: 200px;
+            cursor: pointer;
+            color: white;
+        }
+        .section2{
+            height: 80vh;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            padding-left: 50px;
+            gap: 50px;
+        }
+        .section2 img {
+            height: 550px;
+            width: 400px;
+            border-radius: 25px;
+            padding-top: 200px;
+        }
+        .section2 h1{
+            font-size: 40px;
+            margin-bottom: 18px;
+            font-weight: none;
+        }
+        .section2 p{
+            font-size: 17px;
+            line-height: 2;
+            color: grey;
+        }
+        .subsection2{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 214px;
+            margin-top: -100px;
+            
+        }
+        .subsection2 ul {
+            list-style: none;
+            font-size: 15px;
+            line-height: 2;
+        }
+        .name1 {
+            margin-right: 50px;
+            font-weight: bold;
+        }
+        .name2 {
+        }
+        .section3 {
+            height: 35vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 50px;
+            padding-left: 250px;
+            padding-top: -100px;
+            padding-right: 140px;
+        }
+        .section3 h1 {
+            font-size: 30px;
+            margin-bottom: 18px;
+            font-weight: none;
+            color: #212529;
+            text-align: left;
+        }
+        .section3 p {
+            color: #7d7a7a;
+        }
+        .section4 {
+            height: 65vh;
+            background-color: #f9f9f9;
+            
+
+
+        }
+        .section4 h1{
+            text-align: center;
+            padding-top: 50px;
+            font-size: 30px;
+            margin-bottom: 50px;
+            font-weight: none;
+            color: #212529;
+        }
+        .subsections4 {
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+            gap: 10px;
+            padding-left: 20px;
+        }
+        .subsection4{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 12px;
+            padding-left: 150px;
+            margin-top: 50px;
+        }
+        .subsection4 img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        span{
+            color: black;
+        }
+        .subsection4 p{
+            color: #7d7a7a;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .subsection4 h6{
+            margin-top: 10px;
+            font-size: 20px;
+            color: black;
+            margin-bottom: 0px;
+        }
+        .subsection4 span{
+            font-size: 15px;
+        }
+        .section5 form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        .section5 input{
+            width: 400px;
+            padding: 12px 25px;
+            border-bottom: 1px solid #ccc;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: rgb(206, 206, 206);
+        }
+        .section5 button{
+            padding: 10px 25px;
+            border-radius: 20px;
+            background-color: #ffd500;
+            border: 2px solid #ffd500;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            width: 150px;
+        }
+        .section5 button:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+            border: 2px solid black;
+        }
+        .section5 {
+            height: 50vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .subsection5 h1{
+            font-size: 25px;
+            margin-bottom: 18px;
+            font-weight: none;
+            color: #212529;
+        }
+        .subsection5 p{
+            color: #7d7a7a;
+            margin: 5px 0px;
+        }
+        .subsection5 img{
+            width: 200px;
+            height: 40px;
+            margin-top: 1px;
+            padding-left: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+          Ben Resume
+        </div>
+        <ul>
+            <li>Introduction</li>
+            <li>About Me</li>
+            <li>Reviews</li>
+            <li>Contact</li>
+            <button>Download CV</button>
+        </ul>
+
+    </div>
+    <div class="section1">
+        <div>
+            <img src="https://www.tooplate.com/templates/2120_ben_resume/images/ben.jpg" alt="">
+         </div>   
+         <div>
+            <h1>👋 Ben, a digital nomad</h1>
+            <a href="">hello@company.co</a>
+         </div>
+
+    </div>
+    <div class="section2">
+        <div>
+            <img src="https://www.tooplate.com/templates/2120_ben_resume/images/true-agency.jpg" alt="">
+        </div>
+        <div>
+            <h1>This is Ben's Resume</h1>
+            <p>Ben Resume HTML Template is brought to you by  <span>Tooplate <br> website </span>. You can feel free to edit and use this page for your <br> small site. You are allowed to use this HTML template for any <br> kind of purpose.</p>
+            <p>However, please do not re-distribute the downloadable  <br>template ZIP file on any template collection website. This <br> is strongly prohibited. Please contact Tooplate for more <br> information.</p>
+        </div>
+       
+    </div>
+    <div class="subsection2">
+        <div class="name1">
+                <ul>
+                    <li>Full Name :    </li>
+                    <li>Date of Birth : </li>
+                    <li>Website :      </li>
+                    <li>Email :        </li>
+                </ul>
+            </div>
+            <div class="name2">
+                <ul>
+                    <li>    Ben Wilson</li>
+                    <li> 26 September 1999</li>
+                    <li>    company.co</li>
+                    <li>   hello@company.co</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section3">
+            <div>
+                <h1>Integer volutpat</h1>
+                <p>Sed eu risus tincidunt, finibus dolor non,  gravida ex. Donec lacinia mi nec erat tempus, vel consectetur ante scelerisque. Ut blandit, risus in venenatis ultricies, lacus tellus fermentum.</p>
+            </div>
+            <div>
+                <h1>Mauris semper</h1>
+                <p>Cras et nisl vestibulum, accumsan elit sed, pretium enim. Vestibulum in condimentum magna. Maecenas quam magna, iaculis eu turpis et, commodo pulvinar leo.</p>
+            </div>
+            <div>
+                <h1>Integer id neque</h1>
+                <p>Duis at mollis leo, venenatis congue ex. Cras urna dui, gravida euismod lectus et, cursus tempor nulla. Praesent at turpis quis ex tristique gravida quis eget eros.</p>
+            </div>
+
+        </div>
+        <div class="section4">
+            <h1>What People say</h1>
+            <div class="subsections4">
+                <div class="subsection4">
+                    <div>
+                        <img src="https://www.tooplate.com/templates/2120_ben_resume/images/testimonials/testimonial-image01.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        <h6>Ben</h6>
+                        <span>Art Director</span>
+                    </div>
+
+                </div>
+                <div class="subsection4">
+                    <div>
+                        <img src="https://www.tooplate.com/templates/2120_ben_resume/images/testimonials/testimonial-image02.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        <h6>Marie</h6>
+                        <span>Marketing Consultant</span>
+                    </div>
+
+                </div>
+                <div class="subsection4">
+                    <div>
+                        <img src="https://www.tooplate.com/templates/2120_ben_resume/images/testimonials/testimonial-image03.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        <h6>Jen</h6>
+                        <span>Product Manager</span>
+                    </div>
+
+            </div>
+
+            </div>
+
+
+        </div>
+        <div class="section5">
+            <div>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Full Name"><br>
+                    <input type="email" name="" id="" placeholder="Your Email"><br>
+                    <input type="text" name="" id="" placeholder="Message"><br>
+                    <button>Send</button>
+                </form>
+            </div>
+            <div class="subsection5">
+                <h1>Say hello</h1>
+                <p>010-020-0340</p>
+                <p>hello@company.co </p>
+                <img src="ben.png" alt="">
+                <p>Copyright © 2020 Ben Resume Page</p>
+                <p>Design: Tooplate</p>
+            </div>
+
+        </div>
+</body>
+</html>

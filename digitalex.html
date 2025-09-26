@@ -389,26 +389,83 @@
       width: 150px;
     }
     .footer {
-      background-color: #17094c;
-      height: 70vh;
-      margin-top: 20px;
-      display: flex;
-      color: #fff;
-    }
-    .footer div {
-      flex: 1;
-      padding: 40px;
-    }
-    .imh {
-      padding: 0;
-      margin: 0;
-      height: 10px;
-    }
-    .imh img {
-      height: 150px;
-      margin-top: 40px;
-    }
-    
+  background-color: #17094c;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer div {
+  flex: 1;
+  margin: 10px 20px;
+}
+
+.footer h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: #ffc107;
+}
+
+.footer .social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer .social i {
+  font-size: 20px;
+  background: #fff;
+  color: #17094c;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.footer .contact div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer .contact img {
+  width: 45px;
+  margin-right: 10px;
+}
+.footer-bottom {
+  text-align: center;
+  background: #17094c;
+  color: #ccc;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 13px;
+}
+
+
+   
   </style>
 </head>
 <body>
@@ -534,34 +591,43 @@
     <div>
       <img src="https://technext.github.io/digitalex/images/map-(1).png" alt="">
     </div>
+    
     <div class="footer">
-      <div>
-        <h1>DIGITALEX</h1>
-        <p>reader will be distracted by the <br> readable content of a page when <br> looking at its layout. The point of <br> using Lorem Ipsum is that it has a <br> more-or-less normal di</p>
-      </div>
-      <div>
-        <h1>QUICK LINK</h1>
-        <p> > HOME</p>
-        <p> > Hbout</p>
-        <p> > Currency</p>
-        <p> > Exchange</p>
-        <p> > Subscribe</p>
-      </div>
-      <div>
-        <h1>INSTAGRAM</h1>
-        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do</p>
-        <img src="Screenshot 2025-09-19 112610.png" alt="">
-      </div>
-      <div class="imh">
-        <img src="Screenshot 2025-09-19 112205.png" alt="">
-      </div>
-      <div>
-        <h1>CONTACT INFO</h1>
-        <p>Reader will be dis <br> tracted by the reada</p>
-        <p>demo@gmail.com</p>
-        <p>+01 102586954775</p>
-      </div>
+  <div>
+    <h1>DIGITALEX</h1>
+    <p>reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal di</p>
+  </div>
+
+  <div>
+    <h1>QUICK LINK</h1>
+    <ul>
+      <li> > Home</li>
+      <li> > Hbout</li>
+      <li> > Currency</li>
+      <li> > Exchange</li>
+      <li> > Subscribe</li>
+    </ul>
+  </div>
+
+  <div>
+    <h1>INSTAGRAM</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    <div class="social">
+      <img src="Screenshot 2025-09-19 112610.png" alt="">
     </div>
+  </div>
+
+  <div class="contact">
+    <h1>CONTACT US</h1>
+    <div><img src="digiicon (2).png" alt="Location"><p>Reader will be distracted by the reada</p></div>
+    <div><img src="digiicon (3).png" alt="Email"><p>demo@gmail.com</p></div>
+    <div><img src="digiicon (1).png" alt="Phone"><p>+01 102586954775</p></div>
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <p>Copyright 2019 All Right Reserved By Free html Templates</p>
+</div>
 
   
 </body>
